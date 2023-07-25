@@ -1,4 +1,4 @@
-## Constraint Programming
+## Decision Support System
 
 **Decision support system** is a framework supporting the decision-making activities of people and organizations.
 It focuses on facilitating decision-making rather than fully automating it.
@@ -44,3 +44,16 @@ The first step is identifying the problem components and their interaction:
 * Constraints (define the requirements)
 * Objective (Something to maximize or minimize)
 * Parameters (Input values)
+
+### Constraint Programming
+
+Constraint programming is a declarative paradigm to model and solve problems.
+
+Converting a real-life problem into a mathematical model can be tricky and requires expertise.
+Given a mathematical model for a problem, we need to encode it in a language understandable by the solvers.
+
+Officially, there is no official language, but we will see `MiniZinc`.
+
+## MiniZinc Playground
+
+`https://play.minizinc.dev/#session=M9lNSp`
