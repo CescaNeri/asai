@@ -71,3 +71,56 @@ Policies can be:
 * Stochastic (to explore the environment)
 
 The policy can be based on an estimation of the value function.
+
+### Value
+
+The value function gives the long-term value of the state under the policy. The value of a state is the total amount of reward an agent can expect to accumulate over the future, starting from the state.
+
+The **state-action** value function gives a long-term value and allows me to maximize the return.
+
+The optimal policy is the one that maximizes the expected return!
+
+In RL, the policy is essential to explore the environment (exploration) while maximizing the **reward**.
+
+*Epsilon Greedy Policy:* maximizes the return with probability 1 - e and acts randomly with probability e to explore the environment.
+
+Exploration finds more information about the environment while exploitation exploits known information to maximize the reward.
+
+*Exploration/Exploitation dilemma*
+
+## Reinforcement Learning Problems
+
+They can be of two types:
+
+1. Tabular methods
+2. Approximate methods (Deep RL)
+
+The model is based on **policy iteration** to achieve the maximum reward and the maximum return.
+
+Types of models:
+
+* Value based (Q-Learning)
+* Policy based (Reinforce)
+* Actor critic (PPO)
+
+### Q Learning
+
+1. Initialize Q arbitrarily and put 0 on terminal states
+2. For each episode:
+    - Randomly initialize the state with t = 0:
+        - For each step t:
+            - Choose the action using a policy
+            - Take the action and observe the reward
+            -  Perform te update
+            - Increase t
+
+Q-Learning algorithms can be used both **Offline** and **Online**
+
+### Offline
+
+It creates a simulation of the selected environment, simulating the agent-environment interaction learning the Q-function.
+However, there is no adaptation to the real environment and it may incur in the reality trap (the approximation of the environment is not good enough).
+
+### Online
+
+It learns the Q-function while interacting with the real environment evolves.
