@@ -124,3 +124,13 @@ However, there is no adaptation to the real environment and it may incur in the 
 ### Online
 
 It learns the Q-function while interacting with the real environment evolves.
+
+### Deep Reinforcement Learning
+
+It refers to the use of deep neural networks to approximate the value function/policy.
+
+Key features:
+
+* Value function approximation
+* Policy gradient
+* Deep neural network
