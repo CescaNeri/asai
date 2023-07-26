@@ -40,5 +40,34 @@ We can distinguish four types of adaptivity:
 
 The behavior of an agent is always the result of the interaction with the environment.
 
-## Behavior-based Robotics
+### Behavior-based Robotics
+
+* Roomba 
+
+We want to program a robot so that it is able to explore an unknown environment avoiding collisions and being able to go to the recharging station when needed.
+
+Examples of behaviors:
+
+*  Avoid object
+* Find an object
+* Build a map
+* Find a path 
+* Hide from the light
+* Aggregate with your team
+
+Behaviors can be designed at a variety of levels of detail, with parallel execution and distributed control.
+The network of behavior can store states can can be used to construct a model of the world. It can store history and look ahead into the future.
+Behaviors are usually designed so that they operate on compatible time-scales.
+
+*The best model that a robot can use is the world*
+
+Behavior coordination can follow two methods:
+
+1. Arbitration (competitive scheme)
+2. Fusion (cooperative scheme)
+
+### The Subsumption Architecture
+
+Decompose robot architecture in task-achieving behaviors or **competences** with parallel and distributed control.
+
 
