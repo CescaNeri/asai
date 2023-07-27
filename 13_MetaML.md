@@ -17,7 +17,8 @@ Elements:
 * Hyper-parameters
 * Metrics
 
-Explore all the configurations is unfeasible, we need to explore a few of them but in a smart way:
+Explore all the configurations is unfeasible, we need to explore a few of them bu
+t in a smart way:
 
 * Divide the exploration in iterations
 * Keep track of past evaluation scores
@@ -56,3 +57,48 @@ It is a library which allows a clear and intuitive interpretation of prediction,
 ### Explanations via Symbolic Knowledge Extraction
 
 Any algorithmic procedure accepting trained sub-symbolic predictors as input and producing symbolic knowledge as output. 
+
+## Multi Agent Reinforcement Learning
+
+**Multiple agents** learn to take the right actions (policy) to maximize a **reward** signal.
+
+AN agent does not have a perfect and complete knowledge of the state of the environment.
+Environments are **partially observable** and changes over time.
+Real-case environment dynamics could change over time and we loose convergence guarantees.
+
+The goal is to find policies which works for an **unknown number** of agents.
+
+* **Cooperative** (agents share the same reward function in order to accomplish a collective goal)
+    - Homogeneous (each agent has the same capabilities)
+    - Heterogeneous (each agent could have different capabilities)
+* **Competitive** (agents compete with watch other to maximize a long term return)
+* **Mixed** (agents can both compete and cooperate in order to maximize a global reward function)
+
+Agents can learn in a centralized or decentralized way.
+The goal is to find a centralized policy which works differently on each node.
+
+### Rewards with Multi-Agent System
+
+* A reward for each agent?
+* A collective reward function?
+* Combination?
+
+The most efficient reward is give local rewards, which does not always work as it is not sure that the global goal will be achieve.
+
+### Q Learning with Multiple Agents
+
+Idea: each agent has its own Q table and each agent improves its Q table independently following a local policy.
+ 
+ => Not feasable
+
+Many agents systems are challenging environments for learning.
+Solution: **Constraints**
+
+### Mean-field Reinforcement Learning
+
+Technique to reduce the complexity of a multi-agent system. The idea is to approximate the behavior of the agents.
+
+### Field-Informed Multi-Agent RL
+
+Technique that guides the learning process o the agents using a computational fields.
+The idea is to ease the learning process.
