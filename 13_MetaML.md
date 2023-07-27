@@ -39,3 +39,20 @@ It is a formalization of the Bayesian Optimization:
 It refers to the use of the results obtained in other case studies (according to meta-features) to tune other models.
 
 `OpenML` -> online repository 
+
+## Explainable Artificial Intelligence
+
+Humans and intelligence agents work together in intelligent socio-technical systems to produce overall **intelligent behavior**.
+Information and actions by intelligent agents need to be understandable by humans to be **accepted** and **trusted**.
+
+**Symbolic** approaches are understandable by humans (transparent), but are slow, while **sub-symbolic** approaches are fast but opaque.
+
+The solution is to join these two approaches.
+
+### Local Interpretable Model-Agnostic Explanations (LIME)
+
+It is a library which allows a clear and intuitive interpretation of prediction, applicable to any sort of supervised predictor.
+
+### Explanations via Symbolic Knowledge Extraction
+
+Any algorithmic procedure accepting trained sub-symbolic predictors as input and producing symbolic knowledge as output. 
