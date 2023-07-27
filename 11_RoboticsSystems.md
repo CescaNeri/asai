@@ -48,7 +48,7 @@ We want to program a robot so that it is able to explore an unknown environment 
 
 Examples of behaviors:
 
-*  Avoid object
+* Avoid object
 * Find an object
 * Build a map
 * Find a path 
@@ -69,5 +69,6 @@ Behavior coordination can follow two methods:
 ### The Subsumption Architecture
 
 Decompose robot architecture in task-achieving behaviors or **competences** with parallel and distributed control.
+
 
 
