@@ -84,3 +84,4 @@ When we realize an AI solutions, we need to deal with multiple constraints, not 
 To create value with AI, you first need to identify the goal (and the target) and then how to create it (solution, model and pipeline).
 
 
+
